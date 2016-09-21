@@ -11,14 +11,18 @@ Record your responses inside the fenced code blocks below each question.
 1.  What is the command to generate a new component called '`my-map`'?
 
     ```sh
-    # your response here
+    ember g component my-map
     ```
 
 1.  What files are edited to produce a component, and what are their
     responsibilities?
 
     ```md
-    <!-- your response here -->
+    You have a route and a template.hbs for that route, which calls the component.
+    Within the component template.hbs file is the structure for that component
+    (buttons, forms, ect.).  The actual component.js file is what sends actions
+    that are in the template.hbs file to the route template, which fires a function
+    that enacts the requested action.
     ```
 
 1.  Suppose you have a component '`my-contact`', which is loaded from
@@ -26,7 +30,7 @@ Record your responses inside the fenced code blocks below each question.
     the syntax for loading this component inside that template?
 
     ```html
-    <!-- your response here -->
+    {{my-contact}}
     ```
 
     Each contact has multiple phone numbers. Suppose you also have '`my-phone`'
